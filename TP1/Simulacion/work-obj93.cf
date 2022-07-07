@@ -1,0 +1,7 @@
+v 4
+file . "../Fuentes/negador_tb.vhd" "e483c0c8a5336ad05daea81e8c1066622bbc3f76" "20220706235156.701":
+  entity negador_tb at 1( 0) + 0 on 13;
+  architecture neg_tb_arq of negador_tb at 7( 71) + 0 on 14;
+file . "../Fuentes/negador.vhd" "d9b888f235c6ed3895f54a1b03683b67a9eefc06" "20220706235156.699":
+  entity negador at 1( 0) + 0 on 11;
+  architecture neg_arq of negador at 11( 124) + 0 on 12;

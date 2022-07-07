@@ -1,0 +1,7 @@
+v 4
+file . "../Fuentes/sumador1bit.vhd" "c2ef0a284a1a9a2c09828b0e25a063b9f2068d78" "20220707003604.069":
+  entity sumador1bit at 1( 0) + 0 on 15;
+  architecture sumador1bit_arq of sumador1bit at 13( 186) + 0 on 16;
+file . "../Fuentes/sumador1bit_tb.vhd" "a052f54dc047d2e5e4168be8914894b7d97362ac" "20220707003604.070":
+  entity sumador1bit_tb at 1( 0) + 0 on 17;
+  architecture sumador1bit_tb_arq of sumador1bit_tb at 7( 75) + 0 on 18;

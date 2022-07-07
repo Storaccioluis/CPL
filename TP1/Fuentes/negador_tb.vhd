@@ -1,17 +1,17 @@
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
-ENTITY neg_tb IS
+ENTITY negador_tb IS
 END;
 
-ARCHITECTURE neg_tb_arq OF neg_tb IS
+ARCHITECTURE neg_tb_arq OF negador_tb IS
 
-    -- component neg is
-    -- port(
-    -- a_i: in std_logic;
-    -- b_o: out std_logic
-    -- );
-    -- end component;
+    COMPONENT negador IS
+        PORT (
+            a_i : IN STD_LOGIC;
+            b_o : OUT STD_LOGIC
+        );
+    END COMPONENT;
 
     SIGNAL a_tb : STD_LOGIC := '0';
     SIGNAL b_tb : STD_LOGIC;
@@ -20,7 +20,7 @@ BEGIN
 
     a_tb <= '1' AFTER 150 ns, '0' AFTER 400 ns;
 
-    DUT : ENTITY work.neg
+    DUT : negador
         PORT MAP(
             a_i => a_tb,
             b_o => b_tb
